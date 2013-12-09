@@ -84,7 +84,7 @@
                 <configuration>
                     <codebase>http://localhost:8080/ExtensoWeb/</codebase>
                     <jnlp>
-                        <mainClass>br.eti.romel.lounge.extensogui.ClienteExtenso</mainClass>
+                        <mainClass>br.eti.romel.lounge.extenso.gui.ClienteExtenso</mainClass>
                         <outputFile>extenso.jnlp</outputFile>
                     </jnlp>
                     <pack200>true</pack200>
