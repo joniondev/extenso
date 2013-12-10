@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>JavaOnion</artifactId>
-        <groupId>br.eti.romel.lounge</groupId>
+        <groupId>br.eti.romel.lounge.extenso</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>br.eti.romel.lounge</groupId>
+    <groupId>br.eti.romel.lounge.extenso</groupId>
     <artifactId>ExtensoWeb</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>

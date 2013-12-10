@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp
     spec="1.0+"
-    codebase="http://localhost:8080/ExtensoWeb/"
+    codebase="http://10.1.1.18:8180/ExtensoWeb/"
     href="extenso.jnlp">
     
   <information>
@@ -25,5 +25,5 @@
     <jar href="lib/beansbinding-1.2.1.jar"/>
   </resources>
   
-  <application-desc main-class="br.eti.romel.lounge.extensogui.ClienteExtenso"/>
+  <application-desc main-class="br.eti.romel.lounge.extenso.gui.ClienteExtenso"/>
 </jnlp>
