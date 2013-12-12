@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp
     spec="1.0+"
-    codebase="http://10.1.1.18:8180/ExtensoWeb/"
+    codebase="http://10.1.1.18:8080/ExtensoJNLP/"
     href="extenso.jnlp">
     
   <information>
     <title>Extenso - Swing + JNLP</title>
         <vendor>Carlos Romel Pereira da Silva, carlos.romel@gmail.com</vendor>
-        <homepage href="http://javaonion.romel.eti.br/"/>
+        <homepage href="https://github.com/carlosromel/javaonion/"/>
   </information>
   
   <!--security>

@@ -4,11 +4,12 @@
 package br.eti.romel.lounge.extenso.ejb;
 
 import br.eti.romel.lounge.extenso.Extenso;
+import java.io.*;
 import java.math.BigDecimal;
 import javax.ejb.Stateless;
 
 @Stateless
-public class ExtensoBean implements ExtensoBeanLocal {
+public class ExtensoBean implements Serializable, ExtensoBeanLocal {
 
     /**
      *

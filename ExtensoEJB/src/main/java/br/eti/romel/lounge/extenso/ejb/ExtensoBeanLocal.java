@@ -4,10 +4,10 @@
 package br.eti.romel.lounge.extenso.ejb;
 
 import java.math.BigDecimal;
-import javax.ejb.LocalBean;
+import javax.ejb.*;
 
-@LocalBean
-interface ExtensoBeanLocal {
+@Local
+public interface ExtensoBeanLocal {
 
-    public String extenso(BigDecimal valor);
+    String extenso(BigDecimal valor);
 }

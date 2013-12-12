@@ -15,7 +15,7 @@
 
             <h2>Porque escolher o caminho fácil quando o difícil também funciona?&trade;</h2>
 
-            <h3>Jar, JUnit, JPA, Swing, Web, JNLP, EJB, WebServices <i>etc</i>.</h3>
+            <h3>Jar, JUnit, JPA, Swing, Servlet, JNLP, JSP, JSF, Seam, EJB, WebServices <i>etc</i>.</h3>
         </div>
 
         <ul>
