@@ -20,7 +20,7 @@ import javax.jws.WebParam;
 public class ExtensoWS {
 
     @EJB
-    private ExtensoBeanLocal extensoBean;
+    private ExtensoBeanRemote extensoBean;
 
     /**
      * Tradução de um valor monetário em seu equivalente por extenso.
