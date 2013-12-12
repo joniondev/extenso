@@ -6,8 +6,8 @@ package br.eti.romel.lounge.extenso.ejb;
 import java.math.BigDecimal;
 import javax.ejb.*;
 
-@Local
-public interface ExtensoBeanLocal {
+@Remote
+public interface ExtensoBeanRemote {
 
     String extenso(BigDecimal valor);
 }

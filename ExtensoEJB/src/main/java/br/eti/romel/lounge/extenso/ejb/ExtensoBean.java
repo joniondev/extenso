@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import javax.ejb.Stateless;
 
 @Stateless
-public class ExtensoBean implements Serializable, ExtensoBeanLocal {
+public class ExtensoBean implements Serializable, ExtensoBeanRemote {
 
     /**
      *
