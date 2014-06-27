@@ -26,7 +26,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>br.eti.romel.labs.extenso</groupId>
+            <groupId>br.eti.romel.lounge.extenso</groupId>
             <artifactId>Extenso</artifactId>
             <version>1.0-SNAPSHOT</version>
             <exclusions>

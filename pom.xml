@@ -13,9 +13,9 @@
 
     <modules>
         <module>Extenso</module>
+        <module>ExtensoEJB</module>
         <module>ExtensoGUI</module>
         <module>ExtensoJNLP</module>
-        <module>ExtensoEJB</module>
         <module>ExtensoWS</module>
         <module>ExtensoWSClient</module>
         <module>WS</module>
