@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>JavaOnion</artifactId>
         <groupId>br.eti.romel.lounge.extenso</groupId>
@@ -13,6 +17,7 @@
     <packaging>ejb</packaging>
 
     <name>ExtensoEJB</name>
+    <url>https://github.com/carlosromel/javaonion</url>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -24,24 +29,53 @@
             <groupId>br.eti.romel.labs.extenso</groupId>
             <artifactId>Extenso</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>beansbinding</artifactId>
+                    <groupId>org.jdesktop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>swing-layout</artifactId>
+                    <groupId>org.swinglabs</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>javax</groupId>
+            <groupId>javaee</groupId>
             <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
+            <version>5</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.1.201405082137</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>2.0.2</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.5</source>
+                    <target>1.5</target>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
@@ -50,12 +84,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-ejb-plugin</artifactId>
-                <version>2.3</version>
+                <version>2.1</version>
                 <configuration>
-                    <ejbVersion>3.1</ejbVersion>
+                    <ejbVersion>3.0</ejbVersion>
                     <generateClient>true</generateClient>
                 </configuration>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -73,7 +108,7 @@
                                 <artifactItem>
                                     <groupId>javax</groupId>
                                     <artifactId>javaee-endorsed-api</artifactId>
-                                    <version>7.0</version>
+                                    <version>5</version>
                                     <type>jar</type>
                                 </artifactItem>
                             </artifactItems>
@@ -81,7 +116,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
     </build>
-
 </project>

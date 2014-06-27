@@ -19,8 +19,8 @@ import javax.jws.WebParam;
 @WebService(serviceName = "ExtensoWS")
 public class ExtensoWS {
 
-    @EJB
-    private ExtensoBeanLocal extensoBean;
+    @EJB(mappedName = "java:global/ExtensoBeanRemote/ExtensoBean!br.eti.romel.lounge.extenso.ejb.ExtensoBean")
+    private ExtensoBeanRemote extensoBean;
 
     /**
      * Tradução de um valor monetário em seu equivalente por extenso.
