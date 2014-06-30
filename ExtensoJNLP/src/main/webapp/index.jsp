@@ -22,6 +22,8 @@
 
             <li><a href="extenso.jnlp">JNLP</a> ou <i>Java Network Lauching Protocol</i>).</li>
 
+            <li><a href="/ExtensoWS/">WS</a> ou <i>Web Services</i>).</li>
+
             <li>Para <a href="https://github.com/cromel/javaonion/issues">solicitar</a> novas funcionalidades.</li>
             
             <li>Para <a href="https://github.com/cromel/javaonion/archive/master.zip">baixar</a> o código compactado (.zip).</li>
