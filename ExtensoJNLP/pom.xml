@@ -34,7 +34,6 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>ExtensoGUI</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
     
@@ -56,7 +55,6 @@
                                 <artifactItem>
                                     <groupId>${project.groupId}</groupId>
                                     <artifactId>ExtensoGUI</artifactId>
-                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/dependency</outputDirectory>

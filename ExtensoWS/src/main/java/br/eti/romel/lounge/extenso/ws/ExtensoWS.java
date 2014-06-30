@@ -19,7 +19,7 @@ import javax.jws.WebParam;
 @WebService(serviceName = "ExtensoWS")
 public class ExtensoWS {
 
-    @EJB
+    @EJB(mappedName = "java:global/ExtensoBeanRemote/ExtensoBean!br.eti.romel.lounge.extenso.ejb.ExtensoBean")
     private ExtensoBeanRemote extensoBean;
 
     /**

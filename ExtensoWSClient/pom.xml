@@ -15,6 +15,7 @@
     <artifactId>ExtensoWSClient</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>ExtensoWSClient</name>
+    <url>https://github.com/carlosromel/javaonion</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,6 +26,11 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml</groupId>
+            <artifactId>webservices-api</artifactId>
+            <version>2.0</version>
         </dependency>
     </dependencies>
 

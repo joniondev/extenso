@@ -52,6 +52,9 @@ public class Extenso {
 
     private BigDecimal valor;
 
+    public Extenso() {
+    }
+
     public Extenso(BigDecimal valor) {
         this.valor = valor;
     }
@@ -67,6 +70,11 @@ public class Extenso {
     public Extenso(Integer valor) {
         this(new BigDecimal(valor));
     }
+
+    public void setValor(BigDecimal valor) { this.valor = valor; }
+    public void setValor(Double valor)     { this.valor = new BigDecimal(valor); }
+    public void setValor(Float valor)      { this.valor = new BigDecimal(valor); }
+    public void setValor(Integer valor)    { this.valor = new BigDecimal(valor); }
 
     @Override
     public String toString() {
