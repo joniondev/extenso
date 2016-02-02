@@ -1,22 +1,8 @@
-.DS_Store
 *.class
-velocity.log
-
-# Package Files #
+*.ear
 *.jar
 *.war
-*.ear
-/ExtensoEJB/target/
-/ExtensoGUI/target/
-/ExtensoJNLP/target/
-/ExtensoSOAP/target/
-/Extenso/target/
-/ExtensoWSClient/target/
-/ExtensoWSRestfull/target/
-/ExtensoWS/target/
-/mavenproject1/target/
-/velocity.log
-/WebApplication1/build/
-/WebApplication1/nbproject/private/
-/WS/target/
-/ExtensoWeb/target/
+*/target/
+.DS_Store
+dependency-reduced-pom.xml
+velocity.log
