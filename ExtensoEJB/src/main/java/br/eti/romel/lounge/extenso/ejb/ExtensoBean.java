@@ -3,10 +3,10 @@
  */
 package br.eti.romel.lounge.extenso.ejb;
 
-import br.eti.romel.lounge.extenso.Extenso;
+import br.eti.romel.lounge.extenso.*;
 import java.io.*;
-import java.math.BigDecimal;
-import javax.ejb.Stateless;
+import java.math.*;
+import javax.ejb.*;
 
 @Stateless
 public class ExtensoBean implements Serializable, ExtensoBeanRemote {
@@ -20,6 +20,6 @@ public class ExtensoBean implements Serializable, ExtensoBeanRemote {
     public String extenso(BigDecimal valor) {
         Extenso extenso = new Extenso(valor);
 
-        return extenso.toString();
+        return String.format("EJB(%s)", extenso.toString());
     }
 }

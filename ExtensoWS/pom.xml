@@ -28,10 +28,9 @@
             <artifactId>servlet-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>br.eti.romel.lounge.extenso</groupId>
             <artifactId>ExtensoEJB</artifactId>
-            <version>${project.version}</version>
-            <type>ejb-client</type>
+            <type>jar</type>
             <exclusions>
                 <exclusion>
                     <artifactId>Extenso</artifactId>
@@ -49,7 +48,7 @@
             <groupId>org.glassfish.metro</groupId>
             <artifactId>webservices-rt</artifactId>
             <version>2.3</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
             <exclusions>
                 <exclusion>
                     <artifactId>webservices-api</artifactId>

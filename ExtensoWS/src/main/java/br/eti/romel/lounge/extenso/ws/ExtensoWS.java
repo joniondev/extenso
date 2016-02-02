@@ -8,9 +8,7 @@ package br.eti.romel.lounge.extenso.ws;
 import br.eti.romel.lounge.extenso.ejb.*;
 import java.math.*;
 import javax.ejb.*;
-import javax.jws.WebService;
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
+import javax.jws.*;
 
 /**
  *
@@ -31,6 +29,6 @@ public class ExtensoWS {
      */
     @WebMethod(operationName = "extenso")
     public String extenso(@WebParam(name = "valor") String valor) {
-        return extensoBean.extenso(new BigDecimal(valor));
+        return String.format("WS(%s)", extensoBean.extenso(new BigDecimal(valor)));
     }
 }

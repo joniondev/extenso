@@ -6,3 +6,4 @@
 .DS_Store
 dependency-reduced-pom.xml
 velocity.log
+/ExtensoJS/nbproject/private/
