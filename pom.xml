@@ -18,6 +18,7 @@
         <module>ExtensoJNLP</module>
         <module>ExtensoWS</module>
         <module>ExtensoWSClient</module>
+        <module>ExtensoWeb</module>
     </modules>
 
     <dependencyManagement>
