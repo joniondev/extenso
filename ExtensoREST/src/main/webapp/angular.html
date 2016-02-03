@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="App">
+    <head>
+        <title>Extenso by AngularJS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/jquery-1.12.0.js"></script>
+        <script src="scripts/bootstrap.js"></script>
+        <script src="scripts/angular.js"></script>
+        <script src="scripts/angular-locale_pt-br.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/extenso.js"></script>
+        <link rel="stylesheet" href="styles/bootstrap.css">
+    </head>
+    <body ng-controller="ExtensoCtrl">
+        <h1 class="text-center">O extenso de um número</h1>
+        <div class="row">
+            <div class="alert alert-success col-md-4 col-md-offset-4" ng-show="mensagem">{{mensagem}}</div>
+            <div class="col-md-4 col-md-offset-4">
+                <form ng-submit="transcrever()">
+                    <div class="form-group">
+                        <label for="numero">Valor</label>
+                        <input type="text" class="form-control" id="numero" ng-blur="transcrever()" ng-model="valor">
+                    </div>
+                    <button type="submit" class="btn btn-default">Transcrever</button>
+                    <div class="form-group">
+                        <label for="extenso">Extenso</label>
+                        <input type="text" readonly="readonly" class="form-control" id="extenso" ng-model="extenso">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
