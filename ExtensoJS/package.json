@@ -1,8 +1,0 @@
-{
-    "name": "ExtensoJS",
-    "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": "Carlos Romel Pereira da Silva <carlos.romel@gmail.com>",
-    "contributors": [],
-    "dependencies": {}
-}
