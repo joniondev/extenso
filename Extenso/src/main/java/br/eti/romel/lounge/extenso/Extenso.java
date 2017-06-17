@@ -12,14 +12,14 @@ public class Extenso {
     private static final String SEPARADOR    = ", ";
     private static final String QUALIFICADOR = " de";
 
-    private final static String[][] decimais = {
+    private final static String[][] DECIMAIS = {
         { "cento", "duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos" },
         { "dez",   "vinte",    "trinta",    "quarenta",     "cinquenta",  "sessenta",   "setenta",    "oitenta",    "noventa"    },
         { "um",    "dois",     "três",      "quatro",       "cinco",      "seis",       "sete",       "oito",       "nove",
           "onze",  "doze",     "treze",     "quatorze",     "quinze",     "dezesseis",  "dezessete",  "dezoito",    "dezenove"   }
     };
 
-    private final static String[][] multiplos = {
+    private final static String[][] MULTIPLOS = {
         { "vigesilhão",     "vigesilhões"     },
         { "novedecilhão",   "novedecilhões"   },
         { "octodecilhão",   "octodecilhões"   },
@@ -45,10 +45,10 @@ public class Extenso {
         { "centavo",        "centavos"        }
     };
 
-    private static final int CASAS    = multiplos.length * 3;
-    private static final int CENTAVOS = multiplos.length - 1;
-    private static final int MOEDA    = multiplos.length - 2;
-    private static final int MILHAR   = multiplos.length - 3;
+    private static final int CASAS    = MULTIPLOS.length * 3;
+    private static final int CENTAVOS = MULTIPLOS.length - 1;
+    private static final int MOEDA    = MULTIPLOS.length - 2;
+    private static final int MILHAR   = MULTIPLOS.length - 3;
 
     private BigDecimal valor;
 
@@ -88,7 +88,7 @@ public class Extenso {
         int valorAbsoluto;
         int grau;
 
-        for (int grandeza = 0; grandeza < multiplos.length; ++grandeza) {
+        for (int grandeza = 0; grandeza < MULTIPLOS.length; ++grandeza) {
             classe = formatado.substring(grandeza * 3, grandeza * 3 + 3);
 
             if (Integer.parseInt(classe) > 0) {
@@ -115,17 +115,17 @@ public class Extenso {
                              *       esperado: "um mil reais".
                              */
                         } else if (valorAbsoluto == 1 && valorRelativo == 1 && proximos > 0) {
-                            extenso += decimais[++valorRelativo][proximos + 8];
+                            extenso += DECIMAIS[++valorRelativo][proximos + 8];
                         } else {
-                            extenso += decimais[valorRelativo][valorAbsoluto - 1] + (proximos > 0 ? CONECTOR : "");
+                            extenso += DECIMAIS[valorRelativo][valorAbsoluto - 1] + (proximos > 0 ? CONECTOR : "");
                         }
                     }
                 }
 
-                extenso += (extenso.isEmpty() ? "" : " ") + multiplos[grandeza][grau];
+                extenso += (extenso.isEmpty() ? "" : " ") + MULTIPLOS[grandeza][grau];
             } else if (!extenso.isEmpty() && (grandeza == MOEDA)) {
                 grau = ((grandeza < CENTAVOS) || Integer.parseInt(classe) > 1) ? 1 : 0;
-                extenso += (ultimaGrandeza != (MILHAR) ? QUALIFICADOR : "") + " " + multiplos[grandeza][grau];
+                extenso += (ultimaGrandeza != (MILHAR) ? QUALIFICADOR : "") + " " + MULTIPLOS[grandeza][grau];
             }
         }
 
