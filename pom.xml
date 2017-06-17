@@ -21,7 +21,6 @@
         <module>ExtensoREST</module>
         <module>ExtensoWeb</module>
         <module>ExtensoWSClient</module>
-        <module>ExtensoJS</module>
     </modules>
 
     <dependencyManagement>
