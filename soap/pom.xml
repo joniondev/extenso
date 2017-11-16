@@ -26,15 +26,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>extenso</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>extenso</artifactId>
         </dependency>
     </dependencies>
 
@@ -45,8 +43,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
