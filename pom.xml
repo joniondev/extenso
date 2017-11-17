@@ -15,6 +15,8 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <modules>
@@ -22,11 +24,15 @@
         <module>ejb</module>
         <module>gui</module>
         <!--<module>jnlp</module>-->
-        <module>soap</module>
-        <module>rest</module>
         <module>web</module>
+        <module>web-business</module>
+        <module>rest</module>
+        <module>rest-business</module>
+        <module>soap</module>
+        <module>soap-business</module>
         <!--<module>wsclient</module>-->
         <!--<module>js</module>-->
+        <module>completo</module>
     </modules>
 
     <dependencyManagement>
@@ -46,6 +52,22 @@
                 <artifactId>gui</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>web-business</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>rest-business</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>soap-business</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2016 Carlos Romel Pereira da Silva <carlos.romel@gmail.com>
+ * Copyright (c) 2016, 2017 Carlos Romel Pereira da Silva, carlos.romel@gmail.com
  */
 package br.eti.romel.lounge.extenso.rest;
 

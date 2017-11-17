@@ -32,15 +32,15 @@
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
-            <!--<scope>provided</scope>-->
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
         </dependency>
         <dependency>
-            <groupId>br.eti.romel.lounge.extenso</groupId>
-            <artifactId>extenso</artifactId>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>web-business</artifactId>
         </dependency>
     </dependencies>
 
