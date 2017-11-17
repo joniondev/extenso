@@ -29,7 +29,7 @@
         <module>rest</module>
         <module>rest-business</module>
         <module>soap</module>
-        <module>soap-client</module>
+        <module>soap-cli-client</module>
         <module>soap-business</module>
         <!--<module>wsclient</module>-->
         <!--<module>js</module>-->
