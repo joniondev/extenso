@@ -29,10 +29,11 @@
         <module>rest</module>
         <module>rest-business</module>
         <module>soap</module>
+        <module>soap-client</module>
         <module>soap-business</module>
         <!--<module>wsclient</module>-->
         <!--<module>js</module>-->
-        <module>completo</module>
+        <module>showcase</module>
     </modules>
 
     <dependencyManagement>
