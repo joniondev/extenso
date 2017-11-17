@@ -16,13 +16,7 @@
     <artifactId>gui</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>GUI</name>
-    <url>http://javaonion.romel.eti.br</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
-    </properties>
+    <url>https://github.com/carlosromel/javaonion</url>
 
     <dependencies>
         <dependency>
@@ -33,12 +27,10 @@
         <dependency>
             <groupId>org.swinglabs</groupId>
             <artifactId>swing-layout</artifactId>
-            <version>1.0.3</version>
         </dependency>
         <dependency>
             <groupId>org.jdesktop</groupId>
             <artifactId>beansbinding</artifactId>
-            <version>1.2.1</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
