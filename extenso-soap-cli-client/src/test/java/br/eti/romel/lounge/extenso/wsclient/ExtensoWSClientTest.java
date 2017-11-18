@@ -17,6 +17,7 @@ public class ExtensoWSClientTest {
     }
 
     @Test
+    @Ignore
     public void nineNineRedBallons() {
 
         /**

@@ -8,6 +8,7 @@
     <artifactId>javaonion</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>javaonion</name>
     <url>https://github.com/carlosromel/javaonion</url>
 
     <properties>
@@ -19,14 +20,19 @@
 
     <modules>
         <module>extenso</module>
-        <module>extenso-ejb2</module>
+
+        <module>extenso-gui</module>
+
+        <module>extenso-ejb</module>
+
         <module>extenso-soap</module>
         <module>extenso-soap-business</module>
         <module>extenso-soap-cli-client</module>
         <module>extenso-soap-web-client</module>
-        <module>extenso-gui</module>
+
         <module>extenso-rest</module>
         <module>extenso-rest-business</module>
+
         <module>extenso-web</module>
         <module>extenso-web-business</module>
         <module>extenso-showcase</module>
@@ -41,32 +47,32 @@
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>ejb</artifactId>
+                <artifactId>extenso-ejb</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>gui</artifactId>
+                <artifactId>extenso-gui</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>web-business</artifactId>
+                <artifactId>extenso-web-business</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>rest-business</artifactId>
+                <artifactId>extenso-rest-business</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>soap-business</artifactId>
+                <artifactId>extenso-soap-business</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>soap-cli-client</artifactId>
+                <artifactId>extenso-soap-cli-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

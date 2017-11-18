@@ -16,6 +16,7 @@
     <artifactId>extenso-rest-business</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>extenso-rest-business</name>
     <url>https://github.com/carlosromel/javaonion</url>
 
     <dependencies>
@@ -28,5 +29,4 @@
             <artifactId>extenso</artifactId>
         </dependency>
     </dependencies>
-    <name>extenso-rest-business</name>
 </project>

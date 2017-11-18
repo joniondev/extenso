@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.extenso.lounge.romel.eti.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ExtensoWS" targetNamespace="http://ws.extenso.lounge.romel.eti.br/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.extenso.lounge.romel.eti.br/" elementFormDefault="unqualified" targetNamespace="http://ws.extenso.lounge.romel.eti.br/" version="1.0">
+
+  <xs:element name="extenso" type="tns:extenso"/>
+
+  <xs:element name="extensoResponse" type="tns:extensoResponse"/>
+
+  <xs:complexType name="extenso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="valor" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="extensoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="extenso">
+    <wsdl:part element="tns:extenso" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="extensoResponse">
+    <wsdl:part element="tns:extensoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ExtensoWS">
+    <wsdl:operation name="extenso">
+      <wsdl:input message="tns:extenso" name="extenso">
+    </wsdl:input>
+      <wsdl:output message="tns:extensoResponse" name="extensoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExtensoWSSoapBinding" type="tns:ExtensoWS">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="extenso">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="extenso">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="extensoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExtensoWS">
+    <wsdl:port binding="tns:ExtensoWSSoapBinding" name="ExtensoWSPort">
+      <soap:address location="http://localhost:8080/soap/ExtensoWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -16,6 +16,7 @@
     <artifactId>extenso-soap-business</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>extenso-soap-business</name>
     <url>https://github.com/carlosromel/javaonion</url>
 
     <dependencies>
@@ -24,5 +25,4 @@
             <artifactId>extenso</artifactId>
         </dependency>
     </dependencies>
-    <name>extenso-soap-business</name>
 </project>
