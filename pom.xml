@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
  
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
@@ -21,19 +19,17 @@
 
     <modules>
         <module>extenso</module>
-        <module>ejb</module>
-        <module>gui</module>
-        <!--<module>jnlp</module>-->
-        <module>web</module>
-        <module>web-business</module>
-        <module>rest</module>
-        <module>rest-business</module>
-        <module>soap</module>
-        <module>soap-cli-client</module>
-        <module>soap-business</module>
-        <!--<module>wsclient</module>-->
-        <!--<module>js</module>-->
-        <module>showcase</module>
+        <module>extenso-ejb2</module>
+        <module>extenso-soap</module>
+        <module>extenso-soap-business</module>
+        <module>extenso-soap-cli-client</module>
+        <module>extenso-soap-web-client</module>
+        <module>extenso-gui</module>
+        <module>extenso-rest</module>
+        <module>extenso-rest-business</module>
+        <module>extenso-web</module>
+        <module>extenso-web-business</module>
+        <module>extenso-showcase</module>
     </modules>
 
     <dependencyManagement>
@@ -66,6 +62,11 @@
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>soap-business</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>soap-cli-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
