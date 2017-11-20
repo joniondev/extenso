@@ -33,7 +33,7 @@
 
         <module>extenso-rest</module>
         <module>extenso-rest-business</module>
-        <module>extenss-rest-cli-client</module>
+        <module>extenso-rest-cli-client</module>
 
         <module>extenso-web</module>
         <module>extenso-web-business</module>
