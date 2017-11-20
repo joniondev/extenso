@@ -21,7 +21,7 @@
         <ul>
             <li><a href="/rest/">REST</a> ou <i>REST WebServices</i>.</li>
             <ul>
-                <li>Exemplo <a href="extenso/1024">/extenso/1024</a> Extenso(1024)</li>
+                <li>Exemplo <a href="rest/extenso/1024.92">/rest/extenso/1024.92</a> Extenso(1024.92)</li>
             </ul>
 
             <li>Para <a href="https://github.com/cromel/javaonion/issues">solicitar</a> novas funcionalidades.</li>
