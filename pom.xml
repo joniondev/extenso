@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
  
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
@@ -26,6 +24,7 @@
         <module>extenso-gui</module>
 
         <module>extenso-ejb</module>
+        <module>extenso-ejb-web-client</module>
 
         <module>extenso-soap</module>
         <module>extenso-soap-business</module>
@@ -34,9 +33,12 @@
 
         <module>extenso-rest</module>
         <module>extenso-rest-business</module>
+        <module>extenss-rest-cli-client</module>
 
         <module>extenso-web</module>
         <module>extenso-web-business</module>
+
+        <!--<module>extenso-jnlp</module>-->
         <module>extenso-showcase</module>
     </modules>
 
