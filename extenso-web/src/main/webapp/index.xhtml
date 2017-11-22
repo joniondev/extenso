@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html" />
+
+    <h:head>
+        <title>Java Onion - REST</title>
+    </h:head>
+
+    <h:body>
+        <a href="https://github.com/cromel/javaonion/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"/></a>
+
+        <div style="text-align:center">
+            <h1>Java Onion.</h1>
+
+            <h2>Porque escolher o caminho fácil quando o difícil também funciona?&trade;</h2>
+
+            <h3>Jar, JUnit, JPA, Swing, Servlet, JNLP, JSP, JSF, Seam, EJB, WebServices (SOAP, REST) <i>etc</i>.</h3>
+        </div>
+
+        <p:growl id="mensagens" autoUpdate="true"/>
+
+        <h:form id="f" style="width: 40%;  margin: 0 auto;" >
+            <p:panelGrid columns="2">
+
+                <f:facet name="header">Converta um valor em sua representação extensa.</f:facet>
+
+                <p:outputLabel value="Valor: "/>
+                <p:inputText value="#{moedaBean.valor}" required="true" id="valor" />
+
+                <p:outputLabel value="Extenso: "/>
+                <p:outputLabel value="#{moedaBean.extenso}"/>
+
+                <f:facet name="footer">
+                    <p:commandButton value="Transcrever" action="#{moedaBean.transcrever}" update=":mensagens @form"/>
+                </f:facet>
+            </p:panelGrid>
+        </h:form>
+
+        <ul>
+            <li>Para <a href="https://github.com/cromel/javaonion/issues">solicitar</a> novas funcionalidades.</li>
+
+            <li>Para <a href="https://github.com/cromel/javaonion/archive/master.zip">baixar</a> o código compactado (.zip).</li>
+
+            <li>Para entrar em <a href="mailto:carlos.romel@gmail.com">contato</a>.</li>
+        </ul>
+
+    </h:body>
+</html>
