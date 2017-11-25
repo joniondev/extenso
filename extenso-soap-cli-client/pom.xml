@@ -19,6 +19,24 @@
     <name>extenso-soap-cli-client</name>
     <url>https://github.com/carlosromel/javaonion</url>
 
+    <licenses>
+        <license>
+            <name>GNU LGPL 2</name>
+            <url>http://www.gnu.org/licenses/gpl-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>cromel</id>
+            <name>Carlos Romel Pereira da Silva</name>
+            <email>carlos.romel@gmail.com</email>
+            <url>https://github.com/carlosromel</url>
+            <timezone>GMT-3</timezone>
+        </developer>
+    </developers>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
