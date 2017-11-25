@@ -33,19 +33,19 @@
 
         <module>extenso-rest</module>
         <module>extenso-rest-business</module>
-        <module>extenso-rest-cli-client</module>
+        <!--<module>extenso-rest-cli-client</module>-->
 
         <module>extenso-web</module>
         <module>extenso-web-business</module>
 
-        <!--<module>extenso-jnlp</module>-->
+        <module>extenso-jnlp</module>
         <module>extenso-showcase</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>${project.groupId}</groupId>
+                <groupId>br.eti.romel.lounge</groupId>
                 <artifactId>extenso</artifactId>
                 <version>${project.version}</version>
             </dependency>

@@ -34,7 +34,7 @@
             <artifactId>beansbinding</artifactId>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>br.eti.romel.lounge</groupId>
             <artifactId>extenso</artifactId>
         </dependency>
     </dependencies>
