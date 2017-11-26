@@ -10,14 +10,39 @@
         </div>
 
         <div class="container">
-            <div class="alert alert-info" role="alert">
-                <p>Disponível também via REST:</p>
-                <p>Exemplos:</p>
-                <ul>
-                    <li><a href="/v1/extenso/1024">/v1/extenso/1024</a></li>
-                    <li><a href="/v1/extenso/1.99">/v1/extenso/1.99</a></li>
-                    <li><a href="/v1/extenso/1000000">/v1/extenso/1000000</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="alert alert-info" role="alert">
+                        <form action="#" th:action="@{/}" th:object="${bean}" method="POST">
+                            <div class="form-group">
+                                <label for="valor">Valor</label>
+                                <input id="valor"
+                                       type="text"
+                                       class="form-control"
+                                       pattern="\d*"
+                                       aria-describedby="Valor a ser convertido"
+                                       placeholder="Informe um valor"
+                                       th:field="*{valor}">
+                                <div class="container">
+                                    <p aria-describedby="Extenso do valor"
+                                       th:text="*{extenso}"/>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Converter</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-info" role="alert">
+                        <p><b>Disponível também via REST</b></p>
+                        <p>Exemplos:</p>
+                        <ul>
+                            <li><a href="/v1/extenso/1024">/v1/extenso/1024</a></li>
+                            <li><a href="/v1/extenso/1.99">/v1/extenso/1.99</a></li>
+                            <li><a href="/v1/extenso/1000000">/v1/extenso/1000000</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

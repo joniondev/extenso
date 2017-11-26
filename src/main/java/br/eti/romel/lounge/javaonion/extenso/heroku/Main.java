@@ -3,13 +3,11 @@
  */
 package br.eti.romel.lounge.javaonion.extenso.heroku;
 
-import br.eti.romel.lounge.extenso.*;
-import java.math.*;
-import java.util.*;
 import javax.ws.rs.core.*;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
+import org.springframework.ui.*;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
@@ -21,7 +19,14 @@ public class Main {
     }
 
     @RequestMapping("/")
-    String index() {
+    String index(Model model) {
+        model.addAttribute("bean", new Bean());
+
+        return "index";
+    }
+
+    @PostMapping("/")
+    public String converter(@ModelAttribute Bean bean) {
 
         return "index";
     }
@@ -30,11 +35,8 @@ public class Main {
     @RequestMapping(path = "/v1/extenso/{valor}",
                     method = RequestMethod.GET,
                     produces = MediaType.APPLICATION_JSON)
-    Map<String, String> extenso(@PathVariable String valor, Map<String, Object> model) {
-        Map<String, String> resultado = new HashMap<>();
-        resultado.put("valor", valor);
-        resultado.put("extenso", new Extenso(new BigDecimal(valor)).toString());
+    Bean extenso(@PathVariable String valor) {
 
-        return resultado;
+        return new Bean(valor);
     }
 }
