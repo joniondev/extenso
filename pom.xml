@@ -49,16 +49,16 @@
         <module>extenso-soap</module>
         <module>extenso-soap-business</module>
         <module>extenso-soap-cli-client</module>
-        <module>extenso-soap-web-client</module>
+        <!--<module>extenso-soap-web-client</module>-->
 
         <module>extenso-rest</module>
         <module>extenso-rest-business</module>
-        <!--<module>extenso-rest-cli-client</module>-->
+        <!--<module>extenso-rest-cli-client</module>v-->
 
         <module>extenso-web</module>
         <module>extenso-web-business</module>
 
-        <module>extenso-jnlp</module>
+        <!--<module>extenso-jnlp</module>-->
         <module>extenso-showcase</module>
     </modules>
 
