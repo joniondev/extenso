@@ -17,9 +17,9 @@
                             <div class="form-group">
                                 <label for="valor">Valor</label>
                                 <input id="valor"
-                                       type="text"
+                                       type="number"
                                        class="form-control"
-                                       pattern="\d*"
+                                       pattern="\d+(\.\d*)?"
                                        aria-describedby="Valor a ser convertido"
                                        placeholder="Informe um valor"
                                        th:field="*{valor}">
